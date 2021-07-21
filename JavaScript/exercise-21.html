@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 21</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background-color: #222220;
+            color: #fff;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        input#valor {
+            width: 300px;
+        }
+
+        div#resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>exercício 21</h1>
+        <p>Ler um valor e escrever se é positivo, negativo ou zero.</p>
+        <input type="number" name="número" id="valor" placeholder="digite um valor aqui">
+        <input type="button" value="verifica" onclick="verificar()">
+        <div id="resultado">Resultado</div>
+
+        <script>
+            function verificar() {
+                let valorDig = window.document.getElementById('valor');
+                let valor = valorDig.value;
+                let resul = window.document.querySelector('div#resultado');
+                if (valor > 0) {
+                    resul.innerHTML = `O número ${valor} é positivo.`
+                } else if (valor == 0) {
+                    resul.innerHTML = `O número ${valor} é zero.`
+                } else {
+                    resul.innerHTML = `O número ${valor} é negativo.`
+                }
+            }
+        </script>
+    </main>
+</body>
+
+</html>
