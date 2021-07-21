@@ -1,0 +1,57 @@
+<!-- 08 - Ler uma quantidade de chuva dada em polegadas, calcular e escrever o 
+valor equivalente em milímetros. Sabe-se que 1 corresponde a 25,4mm.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 500px;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        div#resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Exercício 08</h1>
+        <p>
+            Ler uma quantidade de chuva dada em polegadas, calcular e escrever o
+            valor equivalente em milímetros. Sabe-se que 1 <strong>corresponde a 25,4mm.</strong>
+        </p>
+        <input type="number" name="quantidadeChuva" id="quantidadeChuvaPolegadas"
+            placeholder=" quantidade de chuva em polegadas">
+        <input type="button" value="Converter" onclick="converter()">
+        <div id="resultado">Resultado</div>
+    </main>
+
+    <script>
+        const UmaPolegada = 25.4
+        function converter() {
+            let qtdChuva = window.document.getElementById('quantidadeChuvaPolegadas')
+            let res = window.document.querySelector('div#resultado')
+            let convert = UmaPolegada * qtdChuva.value
+            res.innerHTML = `A quantidade de chuva de ${qtdChuva.value} pelegadas =  ${convert.toFixed(2)} mm  `
+        }
+    </script>
+</body>
+
+</html>
