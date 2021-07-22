@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 45</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background-color: #222220;
+            color: #fff;
+        }
+
+        img {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        input#valor {
+            margin-top: 20px;
+            width: 300px;
+        }
+
+        div#resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>exercício 45</h1>
+        <p> Ler a idade de um nadador e escrever a qual categoria ele pertence, de
+            acordo com a tabela a seguir
+        </p>
+        <img src="./tabela45.png" alt="imagem da tabela 45">
+        <input type="number" name="número" id="valor" placeholder="digite um valor aqui">
+        <input type="button" value="verifica" onclick="verificar()">
+        <div id="resultado">Resultado</div>
+
+        <script>
+            function verificar() {
+                let entrada = document.querySelector('input#valor');
+                valor = entrada.value;
+                let res = document.querySelector('div#resultado');
+
+                if (valor >= 5 && (valor <= 18)) {
+                    switch (valor) {
+                        case '5':
+                        case '6':
+                        case '7':
+                            res.innerHTML = `Infantil A`;
+                            break;
+
+                        case '8':
+                        case '9':
+                        case '10':
+                        case '11':
+                            res.innerHTML = `Infantil B`;
+                            break;
+                        case '12':
+                        case '13':
+                            res.innerHTML = 'Juvenil A';
+                            break;
+
+                        case '14':
+                        case '16':
+                        case '17':
+                            res.innerHTML = 'Juvenil B';
+                            break;
+                        case '18':
+                            res.innerHTML = 'Adulto';
+                            break;
+                        default:
+                            res.innerHTML = 'Default'
+                    }
+                } else if (valor > 18) {
+                    res.innerHTML = 'Adulto'
+                } else {
+                    res.innerHTML = 'Default'
+                }
+            }
+        </script>
+    </main>
+</body>
+
+</html>
