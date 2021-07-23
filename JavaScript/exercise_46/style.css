@@ -1,0 +1,20 @@
+body {
+    font: normal 18pt Arial;
+    background-color: #222220;
+    color: #fff;
+}
+
+input {
+    font: normal 18pt Arial;
+    width: 150px;
+    border-radius: 6px;
+}
+
+input#adicionaNumber{
+    width: 255px;
+    border-radius: 5px;
+}
+
+div#resultado{
+    margin-top: 20px;
+}
