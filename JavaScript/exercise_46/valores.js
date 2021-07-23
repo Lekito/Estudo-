@@ -2,13 +2,13 @@ function AddNumberedList() {
     let addnumero = window.document.getElementById('adicionaNumber');
     let valor = parseInt(addnumero.value);
     let resposta = window.document.querySelector('div#resultado');
-    let arrayNumber = [];
-    console.log(typeof (valor))
+    console.log(valor)
 
     if (valor > 0) {
-        let arrayNumber = arrayNumber.push(valor); // isso não esta funcionando
-        resposta.innerHtml = `${arrayNumber}`;
+        let arrayNumberNew = new Array(valor); // isso não esta funcionando
+        resposta.innerHTML = `${arrayNumberNew.length}`;
     } else {
-        resposta.innerHtml = `Erro! Valor digitado [${valor}] invalido!`;
+        resposta.innerHTML = `Erro! Valor digitado [${valor}] invalido!`;
     }
 }
+
