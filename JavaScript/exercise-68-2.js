@@ -13,10 +13,10 @@ console.log(posicaoIni);
 console.log('\n');
 
 for (index = 0; posicaoIni.length > index; index++) {
-    if (meio < posicaoIni.length) {
+    if (meio < posicaoIni.length) { // pegando os 8 ultimos números do array posicaoIni
         arrayFinal.push(posicaoIni[meio]);
         meio++;
-    } else {
+    } else {      // pegando os primeiro 8 números do array posicaoIni
         arrayFinal.push(posicaoIni[auxiliary]);
         auxiliary++;
     }
