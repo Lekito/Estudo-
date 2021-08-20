@@ -5,9 +5,9 @@ int main (void) {
     x = 10;
 
     int *primeiroPonteiro;
-    primeiroPonteiro = &x;
+    primeiroPonteiro = &x; //usando & pegamos o enderço de memoria da variável X
 
-    printf("%i\n", *primeiroPonteiro);
+    printf("%i\n", *primeiroPonteiro); // Usamos * para passar o valor do ponteiro. Sem o * estamos informando o enderço de memoria.
 
     return 0;
 }
