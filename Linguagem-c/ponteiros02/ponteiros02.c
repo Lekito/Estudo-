@@ -15,6 +15,7 @@ int main (void){
 
   printf("Variável X = %i, variável Y = %i\n", x, y );
   printf("\nVariável Z = %i", z);
+  printf("\n Ponteiro = %i", *ponteiro); // sem * mostra o enderço do ponteiro
 
   getchar();
 
