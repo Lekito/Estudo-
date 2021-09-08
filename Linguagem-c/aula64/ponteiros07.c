@@ -20,7 +20,9 @@ int main (void) {
 
    struct horario antes;
 
-  printf("%i:%i:%i", agora.hora, agora.minuto, agora.segundo);
+   antes.hora = somatorio + depois -> hora;
+
+  printf("%i:%i:%i", antes.hora, agora.minuto, agora.segundo);
 
   getchar();
 
