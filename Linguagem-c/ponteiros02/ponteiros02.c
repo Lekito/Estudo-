@@ -6,17 +6,17 @@ int main (void){
   int z = 30;
 
   int *ponteiro;
-  ponteiro = &x;
- 
+  ponteiro = &x; // recebe o enderço de x
+  printf("\nO ponteiro antes = %i", *ponteiro);
   int y = x;
   x = 20;
-  *ponteiro = z;
+  *ponteiro = z; // recebe o valor de z que é 30
  
-
-  printf("Variável X = %i, variável Y = %i\n", x, y );
+  
+  printf("\nVariável X = %i, variável Y = %i\n", x, y );
   printf("\nVariável Z = %i", z);
   printf("\n Ponteiro = %i", *ponteiro); // sem * mostra o enderço do ponteiro
-
+  printf("\n Endereço do ponteiro = %i  e o endereço de x é = %i", ponteiro, &x);
   getchar();
 
   return 0;

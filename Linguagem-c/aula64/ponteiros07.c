@@ -21,6 +21,7 @@ int main (void) {
    struct horario antes;
 
    antes.hora = somatorio + depois -> hora;
+   antes.minuto = 
 
   printf("%i:%i:%i", antes.hora, agora.minuto, agora.segundo);
 
