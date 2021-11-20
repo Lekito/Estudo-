@@ -17,7 +17,7 @@ int main (void) {
 void funcaoPrint(int x, int vet[]){
 
   x = x + 10;
-  vet [0] = 20;
+  vet [0] = 20; // alterando o valor do array aqui, altera na funcao principal onde o array foi criado.
 
   printf("Variavel int na funcao principal: %i \n", x );
   printf("Vetor na funcao principal: %i\n", vet[0] );
